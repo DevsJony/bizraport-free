@@ -1,0 +1,23 @@
+.blur-sm, .blur, .blur-md, .blur-lg, .blur-xl, [class*="blur-"] {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+div.fixed.z-50:has(h2:contains("Miło Cię widzieć")),
+div.fixed.z-50:has(button:contains("Kontynuuj przez Google")) {
+  display: none !important;
+}
+
+div.fixed.inset-0[class*="bg-black"],
+div.fixed.inset-0[class*="bg-gray"],
+div.fixed.inset-0[class*="backdrop"] {
+  display: none !important;
+}
+
+body *:not(img):not(video) {
+  filter: unset !important;
+}
+
+body.overflow-hidden, html.overflow-hidden {
+  overflow: auto !important;
+}

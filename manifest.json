@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "BizRaport Free",
+  "description": "Removes login popup and blur from bizraport.pl",
+  "version": "1.0.0",
+  "permissions": [],
+  "host_permissions": [
+    "https://bizraport.pl/*",
+    "https://www.bizraport.pl/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bizraport.pl/*",
+        "https://www.bizraport.pl/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "BizRaport Free",
+    "default_icon": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
