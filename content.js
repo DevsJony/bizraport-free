@@ -5,7 +5,10 @@
     document.querySelectorAll('div.fixed.z-50').forEach(popup => {
       if (popup.textContent.includes('Miło Cię widzieć') ||
           popup.textContent.includes('Zaloguj się') ||
-          popup.textContent.includes('Kontynuuj przez Google')) {
+          popup.textContent.includes('Kontynuuj przez Google') ||
+          popup.textContent.includes('Subskrybuj') ||
+          popup.textContent.includes('żeby kontynuować') ||
+          popup.textContent.includes('wybieram Premium')) {
         popup.remove();
       }
     });

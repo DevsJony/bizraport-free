@@ -4,7 +4,9 @@
 }
 
 div.fixed.z-50:has(h2:contains("Miło Cię widzieć")),
-div.fixed.z-50:has(button:contains("Kontynuuj przez Google")) {
+div.fixed.z-50:has(button:contains("Kontynuuj przez Google")),
+div.fixed.z-50:has(button.bg-brand-purple),
+div.fixed.z-50.left-0.right-0:has(.lg\:grid-cols-4) {
   display: none !important;
 }
 
